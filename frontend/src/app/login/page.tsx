@@ -50,6 +50,10 @@ export default function LoginPage() {
             Sign in
           </button>
         </form>
+
+        <div className="text-center text-xs text-slate-400 font-mono">
+          Don't have an account? <a href="/signup" className="text-blue-400 hover:underline">Create one</a>
+        </div>
       </div>
     </main>
   );
