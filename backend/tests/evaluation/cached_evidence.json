@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "case_type": "strong_match",
+    "human_match": true,
+    "human_score": 92,
+    "recommendation": {
+      "recommendation": "Strong match. The candidate demonstrates substantial alignment with the role requirements.",
+      "match_score": 90.0,
+      "confidence": 91.88,
+      "matched_required_skills": [
+        {
+          "skill": "Python",
+          "evidence": "experience building REST APIs using Python",
+          "confidence": 95.0,
+          "match_type": "direct"
+        },
+        {
+          "skill": "FastAPI",
+          "evidence": "experience building REST APIs using FastAPI",
+          "confidence": 95.0,
+          "match_type": "direct"
+        },
+        {
+          "skill": "PostgreSQL",
+          "evidence": "experience building REST APIs using PostgreSQL",
+          "confidence": 95.0,
+          "match_type": "direct"
+        },
+        {
+          "skill": "REST APIs",
+          "evidence": "experience building REST APIs",
+          "confidence": 95.0,
+          "match_type": "direct"
+        },
+        {
+          "skill": "Git",
+          "evidence": "experience building REST APIs using Git",
+          "confidence": 95.0,
+          "match_type": "direct"
+        }
+      ],
+      "missing_required_skills": [],
+      "matched_nice_to_have": [
+        {
+          "skill": "Docker",
+          "evidence": "experience building REST APIs using Docker",
+          "confidence": 85.0,
+          "match_type": "direct"
+        },
+        {
+          "skill": "pytest",
+          "evidence": "experience building REST APIs using pytest",
+          "confidence": 85.0,
+          "match_type": "direct"
+        }
+      ],
+      "missing_nice_to_have": [],
+      "relevant_experience": [
+        "experience building REST APIs using Python, FastAPI, PostgreSQL, Docker, Git and pytest"
+      ],
+      "relevant_projects": [
+        "Built backend services with authentication and database integration"
+      ],
+      "education_match": [
+        "Computer Science student"
+      ],
+      "uncertainties": []
+    }
+  }
+]

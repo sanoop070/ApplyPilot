@@ -1,0 +1,242 @@
+﻿[
+  {
+    "id": 1,
+    "case_type": "strong_match",
+    "resume": "Computer Science student with experience building REST APIs using Python, FastAPI, PostgreSQL, Docker, Git and pytest. Built backend services with authentication and database integration.",
+    "job_description": "Software Engineering Intern. Required: Python, FastAPI, PostgreSQL, REST APIs, Git. Nice to have: Docker, pytest. Responsibilities include building backend services and writing tests.",
+    "human_match": true,
+    "human_score": 92
+  },
+  {
+    "id": 2,
+    "case_type": "weak_match",
+    "resume": "Frontend developer experienced with React, JavaScript, TypeScript, HTML, CSS and responsive UI development. Built several React applications.",
+    "job_description": "Backend Engineering Intern. Required: Python, FastAPI, PostgreSQL, REST APIs. Nice to have: Docker and pytest. Responsibilities focus on backend API development.",
+    "human_match": false,
+    "human_score": 28
+  },
+  {
+    "id": 3,
+    "case_type": "transferable_skills",
+    "resume": "Computer Science student with strong Python experience. Built Django REST APIs, worked with PostgreSQL and SQL, implemented authentication and deployed applications.",
+    "job_description": "Backend Engineering Intern. Required: Python, FastAPI, PostgreSQL, REST APIs. Nice to have: Docker. Candidate should be able to build production backend services.",
+    "human_match": true,
+    "human_score": 78
+  },
+  {
+    "id": 4,
+    "case_type": "keyword_trap",
+    "resume": "Computer Science student. Skills section lists Python, FastAPI, Docker, PostgreSQL and AWS. Academic coursework includes software engineering.",
+    "job_description": "Backend Engineering Intern. Required: Python, FastAPI, PostgreSQL, REST APIs. Nice to have: Docker and AWS. Responsibilities require practical backend development experience.",
+    "human_match": false,
+    "human_score": 45
+  },
+  {
+    "id": 5,
+    "case_type": "project_relevance",
+    "resume": "Computer Science student with machine learning projects using Python, pandas, NumPy, scikit-learn and TensorFlow. Built image classification and recommendation models.",
+    "job_description": "Backend Engineering Intern. Required: Python, FastAPI, PostgreSQL, REST APIs. Nice to have: Docker. Responsibilities focus on backend services and databases.",
+    "human_match": false,
+    "human_score": 42
+  },
+  {
+    "id": 6,
+    "case_type": "missing_nice_to_have",
+    "resume": "Computer Science student who built backend applications using Python, FastAPI, PostgreSQL and REST APIs. Comfortable with Git and automated testing using pytest.",
+    "job_description": "Backend Engineering Intern. Required: Python, FastAPI, PostgreSQL, REST APIs. Nice to have: AWS, Docker and Kubernetes. Responsibilities include backend development and testing.",
+    "human_match": true,
+    "human_score": 82
+  },
+  {
+    "id": 7,
+    "case_type": "experience_level_mismatch",
+    "resume": "Senior Software Engineer with 8 years of experience designing distributed systems, leading backend teams, managing architecture and mentoring engineers. Expert in Python, APIs and databases.",
+    "job_description": "Software Engineering Intern. Required: Python, REST APIs and basic database knowledge. Candidate should be a current student seeking internship-level experience.",
+    "human_match": false,
+    "human_score": 55
+  },
+  {
+    "id": 8,
+    "case_type": "transferable_skills",
+    "resume": "Computer Science student experienced with Flask, Python, SQL and PostgreSQL. Built REST APIs, authentication systems and database-backed web applications.",
+    "job_description": "Backend Engineering Intern. Required: Python, FastAPI, PostgreSQL, REST APIs. Nice to have: Docker and pytest.",
+    "human_match": true,
+    "human_score": 76
+  },
+  {
+    "id": 9,
+    "case_type": "clear_mismatch",
+    "resume": "Graphic design student experienced with Figma, Photoshop, Illustrator, branding, typography and visual design. Built portfolio websites using design tools.",
+    "job_description": "Backend Engineering Intern. Required: Python, FastAPI, PostgreSQL and REST APIs. Nice to have: Docker.",
+    "human_match": false,
+    "human_score": 5
+  },
+  {
+    "id": 10,
+    "case_type": "strong_match",
+    "resume": "Computer Science student with backend internship experience using Python, FastAPI, PostgreSQL, Docker and pytest. Built REST APIs, authentication and CI pipelines.",
+    "job_description": "Backend Engineering Intern. Required: Python, FastAPI, PostgreSQL, REST APIs, Docker. Nice to have: pytest, AWS and CI/CD.",
+    "human_match": true,
+    "human_score": 94
+  },
+  {
+    "id": 11,
+    "case_type": "missing_required_skill",
+    "resume": "Computer Science student experienced with Java, Spring Boot, MySQL and REST APIs. Built several backend services and worked with Git.",
+    "job_description": "Python Backend Intern. Required: Python, FastAPI, PostgreSQL and REST APIs. Nice to have: Docker.",
+    "human_match": false,
+    "human_score": 35
+  },
+  {
+    "id": 12,
+    "case_type": "strong_match",
+    "resume": "Computer Science student with Python and FastAPI experience. Built PostgreSQL-backed REST APIs, containerized applications with Docker and wrote pytest test suites.",
+    "job_description": "Software Engineering Intern. Required: Python, FastAPI, PostgreSQL and REST APIs. Nice to have: Docker and pytest.",
+    "human_match": true,
+    "human_score": 90
+  },
+  {
+    "id": 13,
+    "case_type": "moderate_match",
+    "resume": "Computer Science student with Python experience and several Flask projects. Worked with SQLite and basic SQL. Built small REST APIs but has no PostgreSQL experience.",
+    "job_description": "Backend Engineering Intern. Required: Python, FastAPI, PostgreSQL and REST APIs. Nice to have: Docker.",
+    "human_match": true,
+    "human_score": 67
+  },
+  {
+    "id": 14,
+    "case_type": "education_mismatch",
+    "resume": "Mechanical Engineering student with Python scripting experience, basic Flask projects and SQL coursework. Built a small inventory application.",
+    "job_description": "Software Engineering Intern. Required: Python, REST APIs and SQL. Preferred: Computer Science or related degree and backend project experience.",
+    "human_match": true,
+    "human_score": 70
+  },
+  {
+    "id": 15,
+    "case_type": "education_mismatch",
+    "resume": "Business Administration student with strong Excel, Power BI and business analytics experience. No programming projects or software development experience.",
+    "job_description": "Software Engineering Intern. Required: Python, Git and REST API development. Nice to have: SQL.",
+    "human_match": false,
+    "human_score": 15
+  },
+  {
+    "id": 16,
+    "case_type": "project_relevance",
+    "resume": "Computer Science student who built a university course management API using Python, Flask, PostgreSQL and JWT authentication. Also implemented role-based access control.",
+    "job_description": "Backend Engineering Intern. Required: Python, REST APIs, SQL and authentication. Nice to have: FastAPI and Docker.",
+    "human_match": true,
+    "human_score": 86
+  },
+  {
+    "id": 17,
+    "case_type": "missing_required_skill",
+    "resume": "Computer Science student experienced with React, TypeScript, Next.js and frontend testing. Built dashboards and responsive web applications.",
+    "job_description": "Data Engineering Intern. Required: Python, SQL, ETL and data pipelines. Nice to have: Airflow and AWS.",
+    "human_match": false,
+    "human_score": 22
+  },
+  {
+    "id": 18,
+    "case_type": "transferable_skills",
+    "resume": "Computer Science student with Node.js, Express, PostgreSQL and REST API experience. Built backend services and implemented JWT authentication.",
+    "job_description": "Python Backend Engineering Intern. Required: Python, REST APIs, PostgreSQL and authentication. Nice to have: FastAPI.",
+    "human_match": true,
+    "human_score": 72
+  },
+  {
+    "id": 19,
+    "case_type": "clear_mismatch",
+    "resume": "Civil Engineering student with AutoCAD, structural analysis, construction planning and surveying experience.",
+    "job_description": "Machine Learning Intern. Required: Python, machine learning, pandas, NumPy and scikit-learn. Nice to have: TensorFlow.",
+    "human_match": false,
+    "human_score": 3
+  },
+  {
+    "id": 20,
+    "case_type": "strong_match",
+    "resume": "Computer Science student with internship experience building Python data pipelines using pandas and SQL. Worked with Airflow, PostgreSQL, AWS S3 and Docker.",
+    "job_description": "Data Engineering Intern. Required: Python, SQL, ETL and data pipelines. Nice to have: Airflow, AWS and Docker.",
+    "human_match": true,
+    "human_score": 95
+  },
+  {
+    "id": 21,
+    "case_type": "moderate_match",
+    "resume": "Computer Science student experienced with Python, pandas, NumPy and scikit-learn. Built machine learning models and performed data preprocessing. Limited production engineering experience.",
+    "job_description": "Machine Learning Intern. Required: Python, pandas, NumPy and machine learning. Nice to have: Docker and cloud deployment.",
+    "human_match": true,
+    "human_score": 84
+  },
+  {
+    "id": 22,
+    "case_type": "keyword_trap",
+    "resume": "Computer Science student. Resume contains a technology list including Python, SQL, AWS, Docker, Kubernetes and Airflow, but provides no projects, work experience or descriptions demonstrating their use.",
+    "job_description": "Data Engineering Intern. Required: Python, SQL, ETL and data pipelines. Nice to have: Airflow, AWS and Docker. Practical project experience is expected.",
+    "human_match": false,
+    "human_score": 40
+  },
+  {
+    "id": 23,
+    "case_type": "missing_nice_to_have",
+    "resume": "Computer Science student with strong Java and Spring Boot backend experience. Built REST APIs, worked with PostgreSQL and implemented authentication.",
+    "job_description": "Backend Engineering Intern. Required: Java, Spring Boot, PostgreSQL and REST APIs. Nice to have: AWS, Docker and Kubernetes.",
+    "human_match": true,
+    "human_score": 88
+  },
+  {
+    "id": 24,
+    "case_type": "experience_level_mismatch",
+    "resume": "Backend developer with 6 years of professional experience leading production API development and mentoring junior engineers. Experienced with Python, FastAPI, PostgreSQL and Docker.",
+    "job_description": "Software Engineering Intern. Required: Python, REST APIs and databases. Candidate should be a student or recent graduate.",
+    "human_match": false,
+    "human_score": 52
+  },
+  {
+    "id": 25,
+    "case_type": "strong_match",
+    "resume": "Final-year Computer Science student with a backend internship. Developed Python FastAPI services, PostgreSQL schemas, Redis caching and Docker deployments. Wrote unit and integration tests.",
+    "job_description": "Backend Software Engineering Intern. Required: Python, FastAPI, PostgreSQL and REST APIs. Nice to have: Docker, Redis and testing.",
+    "human_match": true,
+    "human_score": 96
+  },
+  {
+    "id": 26,
+    "case_type": "clear_mismatch",
+    "resume": "Marketing student with experience in social media campaigns, SEO, content writing, Google Analytics and digital advertising.",
+    "job_description": "Backend Software Engineering Intern. Required: Python, FastAPI, PostgreSQL and REST APIs.",
+    "human_match": false,
+    "human_score": 2
+  },
+  {
+    "id": 27,
+    "case_type": "transferable_skills",
+    "resume": "Computer Science student with C# and .NET experience. Built ASP.NET REST APIs, worked with SQL Server and implemented authentication and authorization.",
+    "job_description": "Backend Engineering Intern. Required: REST APIs, databases and authentication. Nice to have: Python, FastAPI and PostgreSQL.",
+    "human_match": true,
+    "human_score": 74
+  },
+  {
+    "id": 28,
+    "case_type": "moderate_match",
+    "resume": "Computer Science student with Python, Django, SQLite and basic REST API development. Built two academic web applications and understands relational databases.",
+    "job_description": "Backend Engineering Intern. Required: Python, FastAPI, PostgreSQL and REST APIs. Nice to have: Docker.",
+    "human_match": true,
+    "human_score": 68
+  },
+  {
+    "id": 29,
+    "case_type": "missing_required_skill",
+    "resume": "Computer Science student with strong Python and SQL skills. Built data analysis projects using pandas and NumPy but has not built APIs or backend services.",
+    "job_description": "Backend Engineering Intern. Required: Python, FastAPI, REST APIs and PostgreSQL. Nice to have: Docker.",
+    "human_match": false,
+    "human_score": 48
+  },
+  {
+    "id": 30,
+    "case_type": "strong_match",
+    "resume": "Computer Science student with Python backend internship experience. Built REST APIs with FastAPI, PostgreSQL databases, Docker containers and automated tests with pytest. Used GitHub Actions for CI.",
+    "job_description": "Software Engineering Intern. Required: Python, FastAPI, PostgreSQL, REST APIs and testing. Nice to have: Docker, GitHub Actions and cloud deployment.",
+    "human_match": true,
+    "human_score": 93
+  }
+]

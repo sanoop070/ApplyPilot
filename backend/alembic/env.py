@@ -7,7 +7,7 @@ from app.core.config import get_settings
 from app.db.database import Base
 from app.models import Application, Company, User
 
-
+    
 config = context.config
 
 if config.config_file_name is not None:

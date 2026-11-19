@@ -1,0 +1,161 @@
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+
+const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+
+export default function LoginPage() {
+  const router = useRouter();
+  const [mode, setMode] = useState<"login" | "register">("login");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setError("");
+    setLoading(true);
+
+    try {
+      const endpoint = mode === "login" ? "/api/auth/login" : "/api/auth/register";
+
+      const payload =
+        mode === "login"
+          ? { email, password }
+          : { email, password, full_name: fullName || null };
+
+      const response = await fetch(`${API}${endpoint}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.detail || "Authentication failed.");
+      }
+
+      if (mode === "register") {
+        setMode("login");
+        setError("Account created successfully! Please log in.");
+        setPassword("");
+      } else {
+        localStorage.setItem("applypilot_token", data.access_token);
+        router.push("/dashboard");
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return (
+    <main className="flex min-h-screen items-center justify-center bg-[#080b12] px-4 py-10 text-white">
+      <div className="w-full max-w-md">
+        <Link href="/" className="mb-8 inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white">
+          ? Back to ApplyPilot
+        </Link>
+
+        <div className="rounded-3xl border border-white/10 bg-[#101521] p-8 shadow-2xl">
+          <div className="mb-7">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-500 text-xl font-bold">
+              A
+            </div>
+            <h1 className="text-2xl font-bold">
+              {mode === "login" ? "Welcome back" : "Create your account"}
+            </h1>
+            <p className="mt-2 text-sm text-gray-400">
+              {mode === "login"
+                ? "Sign in to continue your job search."
+                : "Start organizing your career journey with ApplyPilot."}
+            </p>
+          </div>
+
+          <form onSubmit={handleSubmit} className="space-y-4">
+            {mode === "register" && (
+              <div>
+                <label className="mb-2 block text-sm text-gray-300">Full name (optional)</label>
+                <input
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
+                  autoComplete="name"
+                  className="w-full rounded-xl border border-white/10 bg-[#080b12] px-4 py-3 outline-none focus:border-blue-500"
+                  placeholder="Your name"
+                />
+              </div>
+            )}
+
+            <div>
+              <label className="mb-2 block text-sm text-gray-300">Email</label>
+              <input
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                autoComplete="email"
+                className="w-full rounded-xl border border-white/10 bg-[#080b12] px-4 py-3 outline-none focus:border-blue-500"
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div>
+              <label className="mb-2 block text-sm text-gray-300">Password</label>
+              <input
+                type="password"
+                required
+                minLength={mode === "register" ? 8 : 1}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                autoComplete={mode === "login" ? "current-password" : "new-password"}
+                className="w-full rounded-xl border border-white/10 bg-[#080b12] px-4 py-3 outline-none focus:border-blue-500"
+                placeholder={mode === "register" ? "At least 8 characters" : "Your password"}
+              />
+            </div>
+
+            {error && (
+              <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-gray-300">
+                {error}
+              </div>
+            )}
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full rounded-xl bg-blue-600 px-4 py-3 font-semibold transition hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {loading
+                ? "Please wait..."
+                : mode === "login"
+                  ? "Sign in"
+                  : "Create account"}
+            </button>
+          </form>
+
+          <div className="mt-6 text-center text-sm text-gray-400">
+            {mode === "login" ? "Don't have an account?" : "Already have an account?"}{" "}
+            <button
+              onClick={() => {
+                setMode(mode === "login" ? "register" : "login");
+                setError("");
+              }}
+              className="font-medium text-blue-400 hover:text-blue-300"
+            >
+              {mode === "login" ? "Create one" : "Sign in"}
+            </button>
+          </div>
+        </div>
+
+        <p className="mt-6 text-center text-xs text-gray-600">
+          ApplyPilot · Your AI career copilot
+        </p>
+      </div>
+    </main>
+  );
+}
+

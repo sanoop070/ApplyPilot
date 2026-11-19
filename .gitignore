@@ -37,3 +37,7 @@ out/
 # Build
 dist/
 build/
+
+.env.local
+.env.*
+!.env.example
