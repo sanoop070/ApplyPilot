@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -59,7 +59,7 @@ export default function LoginPage() {
     <main className="flex min-h-screen items-center justify-center bg-[#080b12] px-4 py-10 text-white">
       <div className="w-full max-w-md">
         <Link href="/" className="mb-8 inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white">
-          ? Back to ApplyPilot
+          ← Back to ApplyPilot
         </Link>
 
         <div className="rounded-3xl border border-white/10 bg-[#101521] p-8 shadow-2xl">
@@ -158,4 +158,5 @@ export default function LoginPage() {
     </main>
   );
 }
+
 

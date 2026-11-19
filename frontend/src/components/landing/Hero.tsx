@@ -43,21 +43,21 @@ function Navbar() {
       </a>
 
       <div className="hero-nav-links">
-        <a href="#products">
+        <a href="#ai">
           Products
           <ChevronDown size={14} strokeWidth={1.8} />
         </a>
-        <a href="#stories">Customer Stories</a>
-        <a href="#resources">Resources</a>
-        <a href="#pricing">Pricing</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#resume">Resume AI</a>
+        
       </div>
 
       <div className="hero-nav-actions">
-        <a href="#demo" className="hero-demo-link">
+        <a href="/login" className="hero-demo-link">
           Book A Demo
         </a>
 
-        <a href="#get-started" className="hero-get-started">
+        <a href="/login" className="hero-get-started">
           Get Started
         </a>
       </div>
@@ -164,7 +164,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          <a href="#get-started" className="hero-primary-button">
+          <a href="/login" className="hero-primary-button">
             <span>Start Tracking Free</span>
 
             <span className="hero-primary-icon">
@@ -172,7 +172,7 @@ export default function Hero() {
             </span>
           </a>
 
-          <a href="#examples" className="hero-secondary-button">
+          <a href="/login" className="hero-secondary-button">
             <span>Explore the Dashboard</span>
             <ArrowRight size={18} strokeWidth={1.8} />
           </a>
@@ -181,3 +181,4 @@ export default function Hero() {
     </section>
   );
 }
+
