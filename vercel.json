@@ -13,6 +13,18 @@
   },
   "rewrites": [
     {
+      "source": "/api/parse-jd",
+      "destination": {
+        "service": "frontend"
+      }
+    },
+    {
+      "source": "/api/scout-jobs",
+      "destination": {
+        "service": "frontend"
+      }
+    },
+    {
       "source": "/api",
       "destination": {
         "service": "backend"
